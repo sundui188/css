@@ -1,0 +1,23 @@
+#first {
+  /* The image used */
+  background-image: url("b.jpg");
+  height: 100%;
+  min-height: 600px;
+  text-align: center;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+.menu {
+  style="color: rgb(227, 230, 233); 
+  text-decoration: none; 
+  margin-right: 25px;
+  font-family: Roboto; 
+  font-size: 18px; 
+  font-style: normal; 
+  font-weight: 400; 
+  line-height: 21px; 
+  letter-spacing: 0em; 
+  text-align: left;
+}
