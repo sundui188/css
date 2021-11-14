@@ -2,82 +2,37 @@
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <ul id="menu-primary" class="nav navbar-nav" style="margin-top: -25px;">
-    <!--<li class="active">
-       <a href="~/Home/Index">Эхлэл</a>
-    </li>-->
-    <li>
-        <a href="/Home/Index#4DX">4DX</a>
-    </li>
-    <li>
-        <a href="/Home/Index#NowShowing">Захиалга</a>
-    </li>
-    <li>
-        <a href="/Home/Index#ComingSoon">Тун удахгүй</a>
-    </li>
-    <!--<li>
-       <a href="~/Home/Index#PopcornFactory">Popcorn Factory</a>
-    </li>-->
-    <li>
-        <a href="/Home/Index#Price">Үнэ урамшуулал</a>
-    </li>
-    <li>
-        <a href="/Home/Index#Membership">Гишүүнчлэл</a>
-    </li>
-    <li>
-        <a href="/Home/Index#Contact">Харилцах</a>
-    </li>
-    <li class="dropdown">
-        <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-        <ul class="dropdown-menu">
-                <li><a href="/Account/Login">Нэвтрэх</a></li>
-                <li><a href="/Account/Register">Бүртгүүлэх</a></li>
-        </ul>
-    </li>
-</ul>
-<div class="container">
-  <h1>My First Bootstrap Page</h1>
-  <p>This part is inside a .container class.</p>
-  <p>The .container class provides a responsive fixed width container.</p>
-  <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
-</div>
-<img src="image\dark-clouds-07.jpg">
-<div>
-  <h3>Манай дэлгэцнээ</h3>
-<h2>Dune</h2>
-<p>Feature adaptation of Frank Herbert's science fiction novel, about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.</p>
-<button><a href="https://nominerdeneidermunkh.github.io/web/"><h3>Тасалбар захиалах</h3></a></button>
-<img src="image\DUNE.jpg">
-</div>
-</div>
-<div>
-<h2>Тун удахгүй манай дэлгэцнээ</h2>
-<div>
-  <h2>Habit</h2>
-  <img src="image\2.jpg">
-  <a href="">Дэлгэрэнгүй</a>
-</div>
-<div>
-  <h2>Resident Evil: Welcome to Raccoon City</h2>
-  <img src="image\img2.jpg">
-  <a href="">Дэлгэрэнгүй</a>
-</div>
- <div>
-  <h2>Venom: let there be carnage</h2>
-  <img src="image\ve.jpg">
-  <a href="">Дэлгэрэнгүй</a>
-</div>
-<div>
-  <h2>Safer at home</h2>
-  <img src="image\1.jpg">
-  <a href="">Дэлгэрэнгүй</a>
-</div>
-</div>
+  <div style="background-color: rgb(12, 8, 3); margin-top: 60px; margin-left: 00px;"  class="topnav" id="myTopnav">
+    <img style="max-width: 30%; height: 30%; " src="logo-main.png">
+    <div style="margin-left: 500px; position: sticky;">
+      <a class="menu" style="color:rgb(227, 230, 233); text-decoration: none; " href="">4DX</a>
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none; " href="">ЗАХИАЛГА</a>
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none; " href="">ТУН УДАХГҮЙ</a>
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none; " href="">ГИШҮҮНЧЛЭЛЭЛ</a> 
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none; " href="">ҮНЭ УРАМШУУЛАЛ</a>
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none; " href="">ХАРИЛЦАХ</a>
+      <a class="menu" style="color: rgb(227, 230, 233); text-decoration: none;  href=""><img src="user.png" alt=""></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <script>
+    function myFunction() { 
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>
