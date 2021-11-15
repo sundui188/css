@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .topnav {
@@ -57,7 +57,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
   }
-  a:hover:after { 
+  a:hover:after:not(#s) { 
     width: 100%; 
     left: 0; 
     }
